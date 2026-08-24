@@ -14,5 +14,12 @@ def health():
         "status": "ok"
     }
 
+@app.route("/status")
+def service_status():
+    return {
+        "status": "online",
+        "service": "OpsTrack API"
+    }
+
 if __name__ == "__main__":
     app.run(debug=True)
