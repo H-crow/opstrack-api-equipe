@@ -5,7 +5,7 @@ app = Flask(__name__)
 @app.route("/")
 def status():
     return {
-        "message": "sua criação, esta vivo!"
+        "message": "Opstrack API está funcionando"
     }
 
 @app.route("/health")
