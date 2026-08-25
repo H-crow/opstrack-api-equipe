@@ -43,5 +43,12 @@ def tickets():
         ]
     }
 
+@app.route("/sobre")
+def sobre():
+    return {
+        "name": "OpsTrack API",
+        "version": "1.0.0"
+    }
+
 if __name__ == "__main__":
     app.run(debug=True)
